@@ -1,12 +1,15 @@
 import { useState } from "react"
+// import InsertText from "../components/InsertText"
 
 const Tarea1 = () => {
 
-    const [number, setNumber] = useState("")
+    const [number, setNumber] = useState("");
+    let res
     
     const calcular = (event) => {
         event.preventDefault();
-        const res = number * 1.60934
+        res =  number + " Milla(s) = " + (number * 1.60934) + " Km"
+        alert(res)
         setNumber('')
     }
 
@@ -21,7 +24,7 @@ const Tarea1 = () => {
                     <input className="form-control" placeholder="" value={number} onChange={(e) => setNumber(e.target.value)}></input>
                 </div>
                 <div>
-                    <button type="button" className="btn btn-success" onClick={(e) => calcular(e)}>Calcular</button>
+                    <button type="button" className="btn btn-success" onClick={calcular}>Calcular</button>
                 </div>
             </div>
         </>
