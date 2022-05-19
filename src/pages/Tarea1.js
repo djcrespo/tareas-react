@@ -1,15 +1,14 @@
 import { useState } from "react"
-// import InsertText from "../components/InsertText"
+import InsertText from "../components/InsertText"
 
 const Tarea1 = () => {
 
     const [number, setNumber] = useState("");
-    let res
+    const [res, setRes] = useState(0);
     
     const calcular = (event) => {
         event.preventDefault();
-        res =  number + " Milla(s) = " + (number * 1.60934) + " Km"
-        alert(res)
+        setRes(number + " Milla(s) = " + (number * 1.60934) + " Km");
         setNumber('')
     }
 
@@ -26,6 +25,9 @@ const Tarea1 = () => {
                 <div>
                     <button type="button" className="btn btn-success" onClick={calcular}>Calcular</button>
                 </div>
+            </div>
+            <div className="d-flex justify-content-center">
+                <InsertText result={res} ></InsertText>
             </div>
         </>
     )

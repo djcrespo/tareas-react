@@ -5,7 +5,7 @@ class InsertText extends Component {
         if(this.props.result === 0) {
             return (
                 <div>
-                    <p>Hola 1</p>
+                    <p>Esperando resultado...</p>
                 </div>
             );
         } else {
