@@ -33,4 +33,4 @@ const Tarea1 = () => {
     )
 }
 
-export default Tarea1   
+export default Tarea1
