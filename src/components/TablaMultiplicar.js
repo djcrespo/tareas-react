@@ -1,6 +1,6 @@
 import { React, Component } from "react";
 
-class TablaMultiplicar extends Component {
+class Tabla extends Component {
     render() {
 
         let number = [];
@@ -26,4 +26,4 @@ class TablaMultiplicar extends Component {
     }
 }
 
-export default TablaMultiplicar
+export default Tabla
